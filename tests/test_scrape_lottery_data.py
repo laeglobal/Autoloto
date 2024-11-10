@@ -1,6 +1,10 @@
+import sys
 import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import pytest
 from data_scraping.scrape_lottery_data import scrape_ny_lottery
+
 
 def test_scrape_lottery_results():
     # Ejecutar el script de scraping
